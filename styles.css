@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #f8b281;
+  --secondary-color: #1b1b1b;
+}
+
+@font-face {
+  font-family: "argonite";
+  src: url("./assets/stone\ orgonite.woff");
+}
+
+section {
+  padding: 2%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 125%;
+  font-weight: lighter;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  text-underline-offset: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav svg {
+  cursor: pointer;
+  z-index: 10;
+}
+.links {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+}
+.links a {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo h1 {
+  margin-left: 0.5rem;
+  font-family: "argonite", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.logo img {
+  width: 1.5rem;
+}
+
+.front-page {
+  min-height: 100vh;
+  color: white;
+}
+
+.selling-points {
+  margin-top: 25vh;
+  font-family: "argonite", sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+  text-align: center;
+}
+
+.selling-points h3 {
+  font-family: sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.ctas {
+  margin-top: 2rem;
+}
+
+.ctas button {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.196);
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.cta-main {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+.cta-main a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.cta-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.classes {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "argonite", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos video {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.meditation,
+.yoga,
+.pilates {
+  position: relative;
+}
+
+.videos h3 {
+  position: absolute;
+  color: var(--main-color);
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.49);
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.about {
+  color: var(--secondary-color);
+}
+.about h2 {
+  font-family: "argonite", sans-serif;
+  text-align: center;
+}
+.about p {
+  line-height: 150%;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media (min-width: 48rem) {
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+  .about img {
+    width: 50%;
+  }
+  .about h2 {
+    text-align: start;
+  }
+  .about p {
+    text-align: start;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #2d2d2d;
+}
+.footer h3 {
+  color: var(--main-color);
+}
+.footer .logo {
+  color: #fff;
+  align-self: self-start;
+  padding: 1.875rem;
+}
+
+.footer-container {
+  padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.social-icons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.flow a {
+  color: #fff;
+}
+
+.nav-headers {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.contacts-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 100%;
+  column-gap: 1.25rem;
+}
+.contacts-svg {
+  align-self: center;
+}
+.contacts-desc {
+  max-width: 70%;
+}
+.flow {
+  display: grid;
+  gap: 1.25rem;
+}
+.copyright {
+  background-color: #2d2d2d;
+  color: #ffffff69;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+.social-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2.5rem;
+}
+
+@media (max-width: 60rem) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer .logo {
+    justify-content: center;
+    padding: 1rem;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons-wrapper {
+    display: inline;
+  }
+  .contacts-desc {
+    max-width: 100%;
+  }
+  .social-list {
+    gap: 0;
+  }
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
