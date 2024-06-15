@@ -1,5 +1,5 @@
-const burger = document.querySelector("nav svg");
 
+const burger = document.getElementById("burger");
 burger.addEventListener("click", () => {
   if (burger.classList.contains("active")) {
     gsap.to(".links", { x: "100%" });
@@ -7,7 +7,7 @@ burger.addEventListener("click", () => {
     gsap.set("body", { overflow: "auto" });
     gsap.set("body", { overflowX: "hidden" });
   } else {
-    gsap.to(".links", { x: "0%" });
+    gsap.to(".links", { scaleX:"1"});
     gsap.to(".line", { stroke: "black" });
     gsap.fromTo(
       ".links a",
@@ -18,6 +18,7 @@ burger.addEventListener("click", () => {
   }
   burger.classList.toggle("active");
 });
+gsap.set("body", { overflowX: "hidden" });
 
 const videos = gsap.utils.toArray(".video");
 gsap.set(videos, { opacity: 0 });
@@ -37,3 +38,4 @@ videos.forEach((video) => {
     onLeaveBack: () => video.pause(),
   });
 });
+
