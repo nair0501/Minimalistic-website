@@ -1,138 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mind & Body</title>
+    <script src="app.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <title>Mind & Body</title>
-  <script src="app.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+  <body>
+    <section class="front-page">
+      <img class="hero" src="./assets/hero.png" alt="Meditation Image" />
+      <nav>
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Mind & Body Logo" />
+          <h1>Mind & Body</h1>
+        </div>
+        <div class="links">
+          <a href="#">Our Story</a>
+          <a href="#">Practice</a>
+          <a href="#">Classes</a>
+        </div>
+        <svg
+          id="burger"
+          width="44"
+          height="18"
+          viewBox="0 0 44 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            class="line"
+            y1="1"
+            x2="44"
+            y2="1"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            class="line"
+            y1="9"
+            x2="27"
+            y2="9"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            class="line"
+            y1="17"
+            x2="11"
+            y2="17"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+      </nav>
+      <div class="selling-points">
+        <h2>Let your mind breathe</h2>
+        <h3>
+          Get unlimited access to yoga, pilates, and meditation classes that fit
+          the way you feel
+        </h3>
+        <div class="ctas">
+          <button class="cta-secondary" role="button">Explore classes</button>
+          <button class="cta-main" role="button">
+            <a href="https://koalendar.com/e/meet-with-naira-aghayan"
+              >Sign up today</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
 
-<body>
-  <section class="front-page">
-    <img class="hero" src="./assets/hero.png" alt="Meditation Image" />
-    <nav>
+    <section class="classes">
+      <div class="classes-description">
+        <h2>Classes tailored for you</h2>
+        <h3>It's time to heal your mind and body</h3>
+      </div>
+
+      <div class="videos">
+        <div class="pilates">
+          <h3>Pilates</h3>
+          <video muted loop class="video" src="./assets/pilates.mp4"></video>
+        </div>
+        <div class="yoga">
+          <h3>Yoga</h3>
+          <video muted loop class="video" src="./assets/yoga.mp4"></video>
+        </div>
+        <div class="meditation">
+          <h3>Meditation</h3>
+          <video muted loop class="video" src="./assets/meditation.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="our-story">
+        <h2>Our story...</h2>
+        <p>
+          I have found peace and balance in my life thanks to Mind and Body's
+          yoga studio. The serene atmosphere and expert instructors have helped
+          me achieve my wellness goals. I highly recommend Mind and Body to
+          anyone looking to improve their physical and mental health.
+        </p>
+      </div>
+      <img src="./assets/our-story.png" alt="Our Story Image" />
+    </section>
+
+    <footer class="footer">
       <div class="logo">
         <img src="./assets/logo.svg" alt="Mind & Body Logo" />
         <h1>Mind & Body</h1>
       </div>
-      <div class="links">
-        <a href="#">Our Story</a>
-        <a href="#">Practice</a>
-        <a href="#">Classes</a>
-      </div>
-      <svg id="burger" width="44" height="18" viewBox="0 0 44 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line class="line" y1="1" x2="44" y2="1" stroke="white" stroke-width="2" />
-        <line class="line" y1="9" x2="27" y2="9" stroke="white" stroke-width="2" />
-        <line class="line" y1="17" x2="11" y2="17" stroke="white" stroke-width="2" />
-      </svg>
-    </nav>
-    <div class="selling-points">
-      <h2>Let your mind breathe</h2>
-      <h3>
-        Get unlimited access to yoga, pilates, and meditation classes that fit
-        the way you feel
-      </h3>
-      <div class="ctas">
-        <button class="cta-secondary" role="button">Explore classes</button>
-        <button class="cta-main" role="button"> <a href="https://koalendar.com/e/meet-with-naira-aghayan">Sign up today</a></button>
-      </div>
-    </div>
-  </section>
-
-  <section class="classes">
-    <div class="classes-description">
-      <h2>Classes tailored for you</h2>
-      <h3>It's time to heal your mind and body</h3>
-    </div>
-
-    <div class="videos">
-      <div class="pilates">
-        <h3>Pilates</h3>
-        <video muted loop class="video" src="./assets/pilates.mp4"></video>
-      </div>
-      <div class="yoga">
-        <h3>Yoga</h3>
-        <video muted loop class="video" src="./assets/yoga.mp4"></video>
-      </div>
-      <div class="meditation">
-        <h3>Meditation</h3>
-        <video muted loop class="video" src="./assets/meditation.mp4"></video>
-      </div>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="our-story">
-      <h2>Our story...</h2>
-      <p>
-        I have found peace and balance in my life thanks to Mind and Body's yoga studio. The serene atmosphere and
-        expert instructors have helped me achieve my wellness goals. I highly recommend Mind and Body to anyone looking
-        to improve their physical and mental health.
-      </p>
-    </div>
-    <img src="./assets/our-story.png" alt="Our Story Image">
-  </section>
-
-  <footer class="footer">
-    <div class="logo">
-      <img src="./assets/logo.svg" alt="Mind & Body Logo" />
-      <h1>Mind & Body</h1>
-    </div>
-    <div>
       <div class="footer-container">
         <h3>Contacts</h3>
-        <ul class="flow" aria-label="Footer" role="list">
           <div class="contacts-wrapper">
-            <img class="contacts-svg" src="assets/Vector.svg" alt="Address Icon">
-            <li class="contacts-desc"><a href="#">1234 Sample Street
-                Austin Texas 78704</a></li>
+            <img
+              class="contacts-svg"
+              src="assets/Vector.svg"
+              alt="Address Icon"
+            />
+            <li><a href="#">1234 Sample Street Austin Texas 78704</a></li>
           </div>
           <div class="contacts-wrapper">
-            <img class="contacts-svg" src="assets/Group.svg" alt="Phone Icon">
-            <li class="contacts-desc"><a href="#">512.333.2222</a></li>
+            <img class="contacts-svg" src="assets/Group.svg" alt="Phone Icon" />
+            <li><a href="#">512.333.2222</a></li>
           </div>
           <div class="contacts-wrapper">
-            <img class="contacts-svg" src="assets/Group (1).svg" alt="Email Icon">
-            <li class="contacts-desc"><a href="#">sampleemail@gmail.com</a></li>
+            <img
+              class="contacts-svg"
+              src="assets/Group (1).svg"
+              alt="Email Icon"
+            />
+            <li><a href="#">sampleemail@gmail.com</a></li>
           </div>
-        </ul>
       </div>
-    </div>
 
-    <div>
-      <div class="footer-container Socials">
+      <div class="footer-container">
         <h3>Social Media</h3>
-        <div class="social-icons-wrapper">
           <ul class="social-list" role="list" aria-label="Social Links">
-            <li><a aria-label="Facebook" href="#">
-                <img src="assets/facebook.svg" alt="Facebook">
-              </a></li>
-            <li><a aria-label="Twitter" href="#">
-                <img src="assets/twitter.svg" alt="Twitter">
-              </a></li>
-            <li><a aria-label="Pinterest" href="#">
-                <img src="assets/pinterest.svg" alt="Pinterest">
-              </a></li>
-            <li><a aria-label="LinkedIn" href="#">
-                <img src="assets/Linked In.svg" alt="LinkedIn">
-              </a></li>
+            <li>
+              <a aria-label="Facebook" href="#">
+                <img src="assets/facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a aria-label="Twitter" href="#">
+                <img src="assets/twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a aria-label="Pinterest" href="#">
+                <img src="assets/pinterest.svg" alt="Pinterest" />
+              </a>
+            </li>
+            <li>
+              <a aria-label="LinkedIn" href="#">
+                <img src="assets/Linked In.svg" alt="LinkedIn" />
+              </a>
+            </li>
           </ul>
-        </div>
       </div>
-    </div>
-  </footer>
-  <p class="copyright">Copyright 2020 All Rights Reserved</p>
-</body>
-
+    </footer>
+    <p class="copyright">Copyright 2020 All Rights Reserved</p>
+  </body>
 </html>
