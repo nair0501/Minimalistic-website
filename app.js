@@ -2,7 +2,7 @@
 const burger = document.getElementById("burger");
 burger.addEventListener("click", () => {
   if (burger.classList.contains("active")) {
-    gsap.to(".links", { x: "100%" });
+    gsap.to(".links", { scaleX: "0" });
     gsap.to(".line", { stroke: "white" });
     gsap.set("body", { overflow: "auto" });
     gsap.set("body", { overflowX: "hidden" });
